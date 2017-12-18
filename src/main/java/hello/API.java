@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/persona")
 public class API {
 
+    //test push.....
+
     @RequestMapping(method = RequestMethod.GET,value = "/buscar")
     public RespuestaDTO buscar(@RequestParam("ced") String cedula){
         return new RespuestaDTO("00","OK",DAOPersona.buscar(cedula));
